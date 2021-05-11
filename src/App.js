@@ -4,7 +4,9 @@ import {useEffect, useState} from "react";
 import {VictoryBar, VictoryChart, VictoryLabel, VictoryLine, VictoryTheme} from "victory";
 import moment from 'moment'
 
+//Main App
 function App() {
+  //Hooks
   const [tracker, setTracker] = useState([]);
   const [timeMins, setTimeMins] = useState(0)
   const [category, setCategory] = useState('');
@@ -16,7 +18,7 @@ function App() {
   const [locationsTime, setLocFreqAgainstTime] = useState([]);
   const [categoriesTime, setCatFreqAgainstTime] = useState([]);
 
-
+  //Requests
   useEffect( () => {
     async function fetchData (){
       const response = await axios.get('http://localhost:5000/api/trackers');
