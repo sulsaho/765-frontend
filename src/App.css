@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#extra {
+    padding-top: 50px;
+}
+
+.entries {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.charts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*
+.chart {
+    width: 800x;
+}*/
+
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+    content: "";
+}
